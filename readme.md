@@ -40,9 +40,19 @@ path.resolve
 1.git init 初始化 一个仓库只需要初始化一次
 2.添加文件到缓存区 git add 文件名 git add fs.js
 通常使用全部添加：git add -A 表示all的意思 所有 或者(git add *)
+3.提交文件到本地仓库 (自己电脑)
+git commit -m''  -m:通常表示你此次提交内容的备注
+git commit -m'添加了轮播图'
+git commit -m'第一次提交' 内容还可以乱写
+添加远程仓库 打开github
+git remote add
+origin 仓库名 
+仓库地址
 
 
+查看远程仓库地址：git remote - v
 
+推送代码到远程仓库 git push origin master
 新建文件 type nul>文件名
 
 git bash 进入文件夹中然后空白处git bash
