@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+    var str = "www.baidu.com/?name=1&age=2&cc=3";
+    console.log(str.split("?")[1]) //name=1&age=2&cc=3
+    // ["www.baidu.com/", "name=1&age=2&cc=3"]
+    var a = str.split("?")[1];
+    var b = a.split("&")
+    console.log(b);// ["name=1", "age=2", "cc=3"]
+    var obj = { };
+    for(var k in b){
+    // console.log(b[k]) name=1 age=2
+    // console.log(b[k].split("="))
+    obj[b[k].split("=")[0]]=b[k].split("=")[1]
+   }
+   console.log(obj);
+    </script>
+</body>
+</html>
